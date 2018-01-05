@@ -81,6 +81,9 @@ public class Kubiki {
                     if (sum1 == sum2)
                         System.out.println("Ничья " + sum1 + ":" + sum2);
                     break;
+                default:
+                    System.out.println("Вы нажали не правильеую кнопку, повторите ввод!");
+            break;
             }
         }
         while (num != 3);

@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Training:jar2">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="Training.jar">
+      <element id="module-output" name="Home" />
+      <element id="module-output" name="Home02_01" />
+      <element id="module-output" name="Training" />
+    </root>
+  </artifact>
+</component>
