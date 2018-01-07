@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
-/**
- * Created by DOM on 05.01.2018.
- */
+
 public class Kubiki {
     public static void show(int x) {
         switch (x) {
@@ -81,20 +79,21 @@ public class Kubiki {
                     if (sum1 == sum2)
                         System.out.println("Ничья " + sum1 + ":" + sum2);
                     break;
+                case 3:
+                if (sum1 > sum2)
+                    System.out.println("Победил " + pl1 + " со счетом " + sum1 + ":" + sum2);
+                if (sum1 < sum2)
+                    System.out.println("Победил " + pl2 + " со счетом " + sum2 + ":" + sum1);
+                if (sum1 == sum2)
+                    System.out.println("Победила дружба!!! " + sum1 + ":" + sum2);
+                System.out.println("Игра окончена!!!!");
+                    break;
                 default:
                     System.out.println("Вы нажали не правильеую кнопку, повторите ввод!");
             break;
             }
         }
         while (num != 3);
-        if (sum1 > sum2)
-            System.out.println("Победил " + pl1 + " со счетом " + sum1 + ":" + sum2);
-            if (sum1 < sum2)
-                System.out.println("Победил " + pl2 + " со счетом " + sum2 + ":" + sum1);
-            if (sum1 == sum2)
-                System.out.println("Победила дружба!!! " + sum1 + ":" + sum2);
-
-        System.out.println("Игра окончена!!!!");
     }
 }
 
