@@ -19,3 +19,4 @@ public class Five {
         System.out.println(Five());
     }
 }
+
