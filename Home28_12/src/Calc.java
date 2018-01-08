@@ -1,16 +1,17 @@
 import java.util.Scanner;
 
-/**
- * Created by DOM on 07.01.2018.
- */
 public class Calc {
 
     static Scanner in = new Scanner(System.in);
 
     public static int getInt() {
         System.out.println("Введите число: ");
-        int num = in.nextInt();
-        return num;
+        int num;
+        while(!in.hasNextInt()){
+            System.out.println("Вы ввели не число, повторите ввод:");
+            in.next();
+        }
+        return num=in.nextInt();
     }
 
     public static char getOperation() {

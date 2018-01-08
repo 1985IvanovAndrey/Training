@@ -20,7 +20,6 @@ public class StrokaStr {
                 "В начале жизни школу помню я...\n" +
                 "В поле чистом серебрится Снег...\n\n";
         System.out.print(str);
-        //System.out.println();
         String mass[] = new String[str.length()];
         for (int i = 0; i < str.length(); i++) {
             mass[i] = str.substring(i, i + 1);

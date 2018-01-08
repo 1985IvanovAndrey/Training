@@ -5,8 +5,13 @@ public class Five {
     static Scanner in = new Scanner(System.in);
 
     public static boolean Five(){
-       System.out.print("Введите число: ");
-       int num=in.nextInt();
+        System.out.print("Введите число: ");
+        int num;
+        while(!in.hasNextInt()){
+            System.out.println("Вы вели не число, повторите ввод!");
+            in.next();
+        }
+        num=in.nextInt();
         return num>5;
     }
 
